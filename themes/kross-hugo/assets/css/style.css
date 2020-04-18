@@ -256,7 +256,9 @@ a:hover {
 }
 
 .bg-primary {
-  background: var(--primary-color) !important
+ /* background: var(--primary-color) !important */
+ background-image: -webkit-gradient(linear, right top, left top, from(#7474BF), to(#348AC7));
+ background-image: linear-gradient(to left, #7474BF, #348AC7);
 }
 
 .bg-gray {
@@ -418,25 +420,29 @@ textarea.form-control {
 }
 
 .navigation {
-  padding: 40px 130px;
+  padding: 30px 130px;
   transition: .3s ease
 }
 
 .navigation.nav-bg {
-  background-color: var(--primary-color);
-  padding: 15px 100px
+  /*background-color: var(--primary-color);*/
+  background-image: -webkit-gradient(linear, right top, left top, from(#7474BF), to(#348AC7));
+  background-image: linear-gradient(to left, #7474BF, #348AC7);
+  padding: 7px 100px
 }
 
 @media(max-width:991px) {
   .navigation.nav-bg {
-    padding: 15px 20px
+    padding: 7px 20px
   }
 }
 
 @media(max-width:991px) {
   .navigation {
-    padding: 20px;
-    background: var(--primary-color)
+    padding: 10px;
+    /*background: var(--primary-color) */
+    background-image: -webkit-gradient(linear, right top, left top, from(#7474BF), to(#348AC7));
+    background-image: linear-gradient(to left, #7474BF, #348AC7);
   }
 }
 
@@ -870,4 +876,18 @@ blockquote {
 
 .filter-controls li.active {
   font-weight: 700
+}
+
+
+
+/* CUSTOM INJECTED CSS STYLES */
+
+.hero-image {
+  background-image: url("../images/backgrounds/apple-clean-containers-205316.jpg");
+  background-image: url("../images/backgrounds/apple-clean-containers-205316.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
