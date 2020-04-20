@@ -85,13 +85,14 @@
           <h2 class="section-title">{{ .title | markdownify }}</h2>
         </div>
         {{ range .item }}
-        <div class="col-lg-3 col-sm-6 mb-4">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
-              <div class="wave" data-progress="{{.progress}}"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">{{.title }} ({{.progress}})</h4>
+        <div class="col-md-4 mb-4">
+          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">{{.title}}</h4>
+              {{ range .content }}
+              <span class="badge badge-pill badge-primary"> {{ . }}</span>
+            {{ end }}
             </div>
           </div>
         </div>
@@ -118,6 +119,7 @@
           <p class="mb-0">{{.duration}}</p>
           <h4>{{.title }}</h4>
           <h6 class="text-light">{{.company }}</h6>
+           <p> {{ .content }} </p>
         </div>
         {{ end }}
       </div>
@@ -206,6 +208,7 @@
             {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
             <div class="hover-overlay">
               <div class="hover-content">
+                <p> {{ .description  }} </p>
                 <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
               </div>
             </div>
@@ -235,7 +238,9 @@
           <div class="text-center testimonial-content">
             <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
             <p class="text-white mb-4">{{.content | markdownify}}</p>
-            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
+            {{ range .image }}
+            <img class="img-fluid mb-4 d-inline-block" width="440" height="220" src="{{ . | absURL }}" alt="client-image">
+            {{ end }}
             <h4 class="text-white">{{.name }}</h4>
             <h6 class="text-light mb-4">{{ .designation }}</h6>
           </div>
