@@ -1,53 +1,61 @@
 # banner
 banner:
-  title : "Hi! I’m <br> Hasan <br> Software Developer"
+  title : "Hi! <br> I’m  Hasan <br> Software Developer"
 
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : 
+    - My name is Hasan Kataya. I’m a 20 year old software developer based in Beirut, Lebanon. I am fast paced and a quick learner with a huge passion for software development.
+    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in JavaScript and Node.js among other technologies to provide the best value to meet your needs.
+  image : "images/about/author.jpg"
   button:
     enable : true
-    label : "know more"
-    URL : "about"
+    label : "Download CV"
 
 # skill
 skill:
   enable : true
   title : "Skills"
   item:
-    - title : "UI Design"
-      icon : "ti-palette"
+    - title : "Development Skills"
+      icon : "ti-stack-overflow"
       content :
-          - string1
-          - string2      
-          - string3
-          - string4
-          - string5
-          - string6
-      highlighted : false
+          - JavaScript
+          - PHP/Laravel       
+          - Node.js 
+          - React.js 
+          - Databases 
+          - Java/JavaFx
+          - Testing (JUnit, Jest)
+        
 
-    - title : "UX Design"
-      icon : "ti-palette"
-      content :
-          - string1
-          - string2      
-          - string3
-          - string4
-          - string5
-          - string6
-      highlighted : false
+      image : '../images/backgrounds/1.jpg'
 
-    - title : "UI/UX Design"
+    - title : "Software Architecture"
       icon : "ti-palette"
       content :
-          - string1
-          - string2      
-          - string3
-          - string4
-          - string5
-          - string6
-      highlighted : false
+          - Model-View-Controller
+          -  Component-Based
+          -  Backend API
+          -  Object Oriented Design
+      image : '../images/backgrounds/2.jpg'
+          
+          
+
+
+    - title : "Software Methodology & Tools"
+      icon : "ti-palette"
+      content :
+          - Agile
+          - SCRUM      
+          - Jira
+          - Trello
+          - Waterfall
+          - Sprints
+          - Whatever
+          - one more
+      image : '../images/backgrounds/3.jpg'
 
 
 # experience
@@ -56,18 +64,28 @@ experience:
   title : "Experience"
   item: 
     - logo : "images/experience/icon-1.png"
-      title : "Junior UX Designer"
-      company : "WEBEX"
-      duration : "Jan 2007 - Feb 2009"
-      content: "Designed,built, and tested the API backend for a platform that can easily be scaled. Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team "
+      title : "Backend Web Developer"
+      company : "LIBRO"
+      duration : "July 2019 - Sept 2019"
+      color: "pink"
+      content: 
+        - Designed,built, and tested the API backend for a platform that can easily be scaled.
+        - Created test suites in order to assess performance and  functionality.   
+        - Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team.
+     
 
     - logo : "images/experience/icon-2.png"
-      title : "UX & UI Designer"
-      company : "AUGMEDIX"
-      duration : "Mar 2009 - Aug 2014"
-      content: "Freelance Development work"
+      title : "PHP / Laravel Developer"
+      company : "FREELANCE"
+      duration : "Dec 2019 - Feb 2020"
+      color: "orange"
+      content: 
+        - Designed,built, and tested the API backend for a platform that can easily be scaled.
+        - Created test suites in order to assess performance and  functionality.   
+        - Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team.
+     
 
-
+    
 # education
 education:
   enable : true
@@ -114,53 +132,25 @@ testimonial:
   enable : true
   title : "Achievements"
   item:
-    - name : "Jesica Gomez"
+    - name : "Hasan Kataya"
       image :
         - images/testimonial/FB_IMG_1586028993511.jpg
-        - images/testimonial/FB_IMG_1586028993511.jpg
-
-      designation : "CEO, Funder"
+        - images/testimonial/IMG-20200411-WA0064.jpg
+  
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       
-    - name : "Shirley Scot"
+    - name : "Hasan Kataya"
       image :
-        - images/testimonial/FB_IMG_1586028993511.jpg
-      designation : "CEO, Funder"
+        - images/testimonial/FB_IMG_1580577062243.jpg
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 # client logo slider
 clients_logo_slider:
   enable : false
   item:
-    - logo : "images/clients-logo/client-logo-1.png"
-      URL : "http://examplesite.com"
+    - logo : ""
+      URL : ""
       
-    - logo : "images/clients-logo/client-logo-2.png"
-      URL : "#"
-      
-    - logo : "images/clients-logo/client-logo-3.png"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/clients-logo/client-logo-4.png"
-      URL : "#"
-      
-    - logo : "images/clients-logo/client-logo-5.png"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/clients-logo/client-logo-1.png"
-      URL : "#"
-      
-    - logo : "images/clients-logo/client-logo-2.png"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/clients-logo/client-logo-3.png"
-      URL : "#"
-      
-    - logo : "images/clients-logo/client-logo-4.png"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/clients-logo/client-logo-5.png"
-      URL : "#"
 
 # blog
 blog:

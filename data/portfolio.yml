@@ -1,52 +1,47 @@
 # portfolio item
 item:
-  - image : "images/portfolio/item-1.png"
+  - image : "images/portfolio/api.png"
+    image_modal: ""
     project_url : "http://examplesite.com"
     category: "design"
-    description: "Test Description"
-      
-  - image : "images/portfolio/item-2.png"
-    project_url : "#"
-    category: "branding"
-    description: "Test Description"
-      
-  - image : "images/portfolio/item-3.png"
-    project_url : "http://examplesite.com"
+    title: "Backend API"
+    description: "Developed a backend API service for jobs in MENA region. Responsibilities included"
+
+  - image : "images/portfolio/noter.png"
+    image_modal : "images/portfolio/noter.png"
+    project_url : "https://noterapp.com"
     category: "illustration"
+    title: "Desktop Application"
+    description: "A video playing and Note taking application to developed to aid students taking video based courses."
+
+
+  - image : "images/portfolio/t.png"
+    image_modal : "images/portfolio/t.png"
+    project_url : "https://github.com/Sami-Sh99/Laravel-Scrum-Crowdsourcing"
+    title: "Web Application"
+    category: "web"
+    description: "25/10 Crowd Sourcing’ is a structure that allows you to rapidly generate and sift through a group’s boldest actionable ideas in less than 30 minutes. This web app replicates this with PHP and Laravel framework"
+  
+      
+  - image : "images/portfolio/Notewall.jpg"
+    image_modal : "images/portfolio/Notewall.jpg"
+    project_url : "https://hkataya.github.io/NoteWall/"
+    category: "web"
+    title: "Web Application"
+    description: "Notewall is a note taking web application that allows users to create, update and delete notes and saves them using local storage API. "
+      
+    
+  - image : "images/portfolio/1_xdo0UBpyszvD7-7EH4TkIA.png"
+    image_modal : "images/portfolio/1_xdo0UBpyszvD7-7EH4TkIA.png"
+    project_url : "https://github.com/Hkataya/DevBlog"
+    title: "Web Application and Server"
+    category: "web"
     description: "Test Description"
       
-  - image : "images/portfolio/item-5.png"
-    project_url : "#"
-    category: "design"
-    description: "Test Description"
-      
-  - image : "images/portfolio/item-8.png"
-    project_url : "http://examplesite.com"
-    category: "illustration"
-    description: "Test Description"
-      
-  - image : "images/portfolio/item-6.png"
-    project_url : "#"
-    category: "design"
-    description: "Test Description"
-  - image : "images/portfolio/item-1.png"
-    project_url : "http://examplesite.com"
-    category: "branding"
-    description: "Test Description"
-      
-  - image : "images/portfolio/item-3.png"
-    project_url : "#"
-    category: "illustration"
-    description: "Test Description"
-      
-  - image : "images/portfolio/item-7.png"
-    project_url : "http://examplesite.com"
-    category: "branding"
-    description: "Test Description"
 
 
 # client logo slider
 clients_logo_slider:
-  enable : true
+  enable : false
   title : "My Clients"
   # clients logo comes from 'data/homepage.yml' file
