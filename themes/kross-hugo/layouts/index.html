@@ -30,13 +30,13 @@
      {{ range .content }}
         <p> {{ . }}</p>
         {{ end }}
-        <button>{{ .button.label }}</button>
       </div>
       <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
+        <div class=" mb-2">
           <img src="{{.image | absURL }}" alt="author"
-            class="img-fluid w-100 rounded-lg border-thick border-white">
+            class="img-fluid w-75 rounded-lg border-thick border-white">
         </div>
+        <button class="btn btn-sm btn-primary ">{{ .button.label }}</button>
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
         </div>
         {{ range .item }}
         <div class="col-lg-4 mb-4">
-          <div class="card hover-shadow shadow"
+          <div class="card hover-shadow shadow hover-div-wrapper"
           style="background-image:url({{.image}}); background-size: cover" >
           <div class="dark-black-overlay">
             <div class="card-body text-center px-4 py-5 mb-5">
@@ -193,7 +193,7 @@
 
             <!--Footer-->
             <div class="modal-footer" > 
-              <a style="font-size: medium;"href="{{$element.project_url}}" role="button" class="btn btn-primary p-3"> Visit Project </a>
+              <a href="{{$element.project_url}}" role="button" class="btn btn-sm btn-primary project-btn"> Visit Project </a>
             </div>
         </div>
         <!--/.Content-->
