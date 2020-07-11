@@ -40,7 +40,7 @@
 <!-- preloader end -->
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="https://hkataya.github.io"><img src="https://hkataya.github.io/images/logo.png" alt="Hasan kataya | Portfolio"></a>
+    <a class="navbar-brand" href="https://hkataya.github.io"><img src="https://hkataya.github.io/images/logo.svg" alt="Hasan kataya | Portfolio"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -82,7 +82,7 @@
   </nav>
 </header>
 
-  
+
 <section class="page-title bg-primary position-relative overflow-hidden">
   <div class="container">
     <div class="row">
@@ -100,29 +100,22 @@
 
 
 
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="font-tertiary mb-5">Automation With JavaScript: Email Scheduler</h3>
-          <p class="font-secondary">Published on May 12, 2019 by <span class="text-primary">Johnathan Smith</span></p>
-          <div class="content">
-            <img src="https://hkataya.github.io/images/blog/node-mailer.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-            <p>JavaScript was never intended to be used for desktop scripting, but upon the arrival of Node js, plently of libraries and packages were created to give javaScript the power to work beyond the browser. One such package is called Node mailer.</p>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="font-secondary">Published on May 12, 2019 by <span
+            class="text-primary">Johnathan Smith</span></p>
+        <img src="https://hkataya.github.io/images/blog/node-mailer.png" alt="post-thumb" class="rounded float-left mr-5 mt-0 ">
+
+        <div class="content">
+          <p>JavaScript was never intended to be used for desktop scripting, but upon the arrival of Node js, plently of libraries and packages were created to give javaScript the power to work beyond the browser. One such package is called Node mailer.</p>
 <p>Node mailer is a module for Node js to send emails. Lets try sending an email with javaScript!</p>
 <p>First we should install the package into our system:</p>
 <pre><code class="language-linenos=table,hl_lines=8 15-17,linenostart=1" data-lang="linenos=table,hl_lines=8 15-17,linenostart=1">npm install nodemailer --save</code></pre>
 <p>Once installed, create a new Script file called email.js. We should first require the package we installed using:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nodemailer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;nodemailer&#39;</span>);
-</code></pre></td></tr></table>
-</div>
-</div>
-<p>Next we should configure the sender options. To do so, we place all settings into an object like so:</p>
+<pre><code class="language-linenos=table,hl_lines=8 15-17,linenostart=1" data-lang="linenos=table,hl_lines=8 15-17,linenostart=1">const nodemailer = require(&#39;nodemailer&#39;);</code></pre>
+<p>Next we should configure the sender options. To do so, we place all settings into an object:</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -189,11 +182,11 @@
 </div>
 <p>And thats it! now you can send an email to multiple people using this simple script.</p>
 
-          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 
@@ -206,7 +199,8 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
-          <form action="#" method="POST" class="row">
+          <form id="contactform" action="https://formsubmit.io/send/c5293540-9088-4d43-8b5d-a9d3d59da0a0" method="POST" class="row">
+            <input name="_redirect" type="hidden" id="name" value="https://hkataya.github.io">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
@@ -217,8 +211,10 @@
               <textarea name="message" id="message" class="form-control px-0 mb-4"
                 placeholder="Type Message Here"></textarea>
             </div>
+            <input name="_formsubmit_id" type="text" style="display:none">
+
             <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
+              <button type="submit" class="btn btn-primary w-100">send</button>
             </div>
           </form>
         </div>
