@@ -131,7 +131,7 @@ h6,
 
 .btn-primary:hover {
   background: #7474BF;
-  transition: 0.3s; 
+  transition: 0.3s;
 }
 
 .btn-primary.focus,
@@ -256,9 +256,9 @@ a:hover {
 }
 
 .bg-primary {
- /* background: var(--primary-color) !important */
- background-image: -webkit-gradient(linear, right top, left top, from(#7474BF), to(#348AC7));
- background-image: linear-gradient(to left, #7474BF, #348AC7);
+  /* background: var(--primary-color) !important */
+  background-image: -webkit-gradient(linear, right top, left top, from(#7474BF), to(#348AC7));
+  background-image: linear-gradient(to left, #7474BF, #348AC7);
 }
 
 .bg-gray {
@@ -452,7 +452,7 @@ textarea.form-control {
   padding: 15px
 }
 
-.navbar .nav-item.active .nav-link{
+.navbar .nav-item.active .nav-link {
   color: #52f8f4;
 }
 
@@ -917,12 +917,12 @@ blockquote {
 }
 
 .dark-black-overlay {
-background: rgba(0, 0, 0, 0.5);
-transition: 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
 }
 
 .dark-black-overlay:hover {
-background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -949,6 +949,16 @@ background: rgba(0, 0, 0, 0.7);
 }
 
 
-.project-btn { 
-}
+.project-btn {}
 
+.portfolio-hover {
+  background-color: rgba(26, 25, 25, 0.651);
+  color: whitesmoke;
+  width: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: whitesmoke;
+}

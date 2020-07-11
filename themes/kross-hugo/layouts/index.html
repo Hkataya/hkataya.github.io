@@ -1,297 +1,278 @@
 {{ define "main" }}
 
-  <!-- hero area -->
-  <section class="hero-area hero-image overflow-hidden" id="parallax">
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
-        </div>
+<!-- hero area -->
+<section class="hero-area hero-image overflow-hidden" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">
+          {{ .Site.Data.homepage.banner.title | safeHTML }}
+        </h1>
       </div>
     </div>
-  
-    <!-- social icon -->
-    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ range .Site.Params.social }}
-      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-      {{ end }}
-    </ul>
-    <!-- /social icon -->
-  </section>
-  <!-- /hero area -->
+  </div>
 
-  {{ if .Site.Data.homepage.about.enable }}
-  {{ with .Site.Data.homepage.about }}
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    {{ range .Site.Params.social }}
+    <li class="mb-3">
+      <a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a>
+    </li>
+    {{ end }}
+  </ul>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
+
+{{ if .Site.Data.homepage.about.enable }} {{ with .Site.Data.homepage.about }}
 <!-- about -->
 <section class="section pt-5">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-     {{ range .content }}
-        <p> {{ . }}</p>
+        {{ range .content }}
+        <p>{{ . }}</p>
         {{ end }}
       </div>
       <div class="col-md-4 text-center drag-lg-top">
-        <div class=" mb-2">
-          <img src="{{.image | absURL }}" alt="author"
-            class="img-fluid w-75 rounded-lg border-thick border-white">
+        <div class="mb-2">
+          <img src="{{.image | absURL }}" alt="author" class="img-fluid w-75 rounded-lg border-thick border-white" />
         </div>
-        <button class="btn btn-sm btn-primary ">{{ .button.label }}</button>
+        <button class="btn btn-sm btn-primary">{{ .button.label }}</button>
       </div>
     </div>
   </div>
 </section>
 <!-- /about -->
-  {{ end }}
-  {{ end }}
+{{ end }}
 
+{{ end }}
 
-  {{ if .Site.Data.homepage.skill.enable }}
-  {{ with .Site.Data.homepage.skill }}
-  <!-- skills -->
-  <section class="section bg-cover"  data-background="{{`images/backgrounds/team-bg.png`|relURL}}" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-lg-4 mb-4">
-          <div class="card hover-shadow shadow hover-div-wrapper"
-          style="background-image:url({{.image}}); background-size: cover" >
+{{ if .Site.Data.homepage.skill.enable }}
+{{ with .Site.Data.homepage.skill }}
+<!-- skills -->
+<section class="section bg-cover" data-background="{{`images/backgrounds/team-bg.png`|relURL}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-4 mb-4">
+        <div class="card hover-shadow shadow hover-div-wrapper"
+          style="background-image:url({{.image}}); background-size: cover">
           <div class="dark-black-overlay">
             <div class="card-body text-center px-4 py-5 mb-5">
               <i class="{{.icon }} icon mb-5 d-inline-block text-white"></i>
               <h4 class="mb-4 text-white">{{.title}}</h4>
               {{ range .content }}
               <span class="badge skill-tag"> {{ . }}</span>
-            {{ end }}
-            </div>
+              {{ end }}
             </div>
           </div>
         </div>
-        {{ end }}
       </div>
+      {{ end }}
     </div>
-  </section>
-  <!-- /skills -->
-  {{ end }}
-  {{ end }}
-
-  {{ if .Site.Data.homepage.experience.enable }}
-  {{ with .Site.Data.homepage.experience }}
-  <!-- experience -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-lg-4 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
-          <p class="mb-0">{{.duration}}</p>
-          <h4>{{.title }}</h4>
-          <h6 class="text-light">{{.company }}</h6>
+  </div>
+</section>
+<!-- /skills -->
+{{ end }} {{ end }} {{ if .Site.Data.homepage.experience.enable }}
+{{ with .Site.Data.homepage.experience }}
+<!-- experience -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-4 col-md-4 text-center">
+        <img src="{{.logo | relURL }}" alt="icon" />
+        <p class="mb-0">{{.duration}}</p>
+        <h4>{{.title }}</h4>
+        <h6 class="text-light">{{.company }}</h6>
         <div style="border-color:{{ .color }};" class="timeline-list mt-3">
-           {{ range .content }}
-        <p class="shadow-sm p-3 mb-3 bg-white rounded"> {{ . }} </p>
-           {{ end }}
+          {{ range .content }}
+          <p class="shadow-sm p-3 mb-3 bg-white rounded">{{ . }}</p>
+          {{ end }}
         </div>
-        </div>
-        {{ end }}
       </div>
+      {{ end }}
     </div>
-  </section>
-  <!-- /experience -->
-  {{ end }}
-  {{ end }}
-
-  {{ if .Site.Data.homepage.education.enable }}
-  {{ with .Site.Data.homepage.education }}
-  <!-- education -->
-  <section class="section position-relative">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
-            </div>
-            <div>
-              <p class="text-dark mb-1">{{.year}}</p>
-              <h4>{{ .title }}</h4>
-              <p class="mb-0 text-light">{{.academy}}</p>
-            </div>
+  </div>
+</section>
+<!-- /experience -->
+{{ end }} {{ end }} {{ if .Site.Data.homepage.education.enable }}
+{{ with .Site.Data.homepage.education }}
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">{{.year}}</p>
+            <h4>{{ .title }}</h4>
+            <p class="mb-0 text-light">{{.academy}}</p>
           </div>
         </div>
-        {{ end }}
       </div>
+      {{ end }}
     </div>
-    <!-- bg image -->
-    <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
-  </section>
-  <!-- /education -->
-  {{ end }}
-  {{ end }}
-
-
-  {{ if .Site.Data.homepage.service.enable }}
-  {{ with .Site.Data.homepage.service }}
-  <!-- services -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image" />
+</section>
+<!-- /education -->
+{{ end }} {{ end }} {{ if .Site.Data.homepage.service.enable }}
+{{ with .Site.Data.homepage.service }}
+<!-- services -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .item }}
+      <div class="col-md-4 mb-4">
+        <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">{{.title}}</h4>
+            <p>{{.content | markdownify}}</p>
           </div>
         </div>
-        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /services -->
+{{ end }} {{ end }} {{ range $index , $element := .Site.Data.portfolio.item }}
+<div class="modal fade" id="centralModalLGInfoDemo{{$index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">{{$element.title}}</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>{{$element.description}}</p>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer">
+        <a href="{{$element.project_url}}" role="button" class="btn btn-sm btn-primary project-btn">
+          Visit Project
+        </a>
       </div>
     </div>
-  </section>
-  <!-- /services -->
-  {{ end }}
-  {{ end }}
-
-  {{ range $index , $element := .Site.Data.portfolio.item }}
-  <div class="modal fade" id="centralModalLGInfoDemo{{$index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
-        <!--Content-->
-        <div class="modal-content">
-            <!--Header-->
-            <div class="modal-header">
-                <p class="heading lead">{{$element.title}}</p>
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true" class="white-text">&times;</span>
-                                                    </button>
-            </div>
-
-            <!--Body-->
-            <div class="modal-body">
-                <div class="text-center">
-                    <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
-                    <p>{{$element.description}}
-                    </p>
-                </div>
-                <img src="{{$element.image_modal}}" class="img-fluid">
-            </div>
-
-            <!--Footer-->
-            <div class="modal-footer" > 
-              <a href="{{$element.project_url}}" role="button" class="btn btn-sm btn-primary project-btn"> Visit Project </a>
-            </div>
-        </div>
-        <!--/.Content-->
-    </div>
+    <!--/.Content-->
+  </div>
 </div>
 {{ end }}
 <!-- Central Modal Large Info-->
 
-
-
-  <!-- portfolio -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .Site.Data.homepage.portfolio.title | markdownify }}</h2>
-        </div>
-      </div>
-      <div class="row shuffle-wrapper">
-        {{ $item:= .Site.Data.homepage.portfolio.item_show }}
-        {{ range $index, $element := first $item .Site.Data.portfolio.item }}
-        <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <div class="position-relative rounded hover-wrapper">
-            <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-            {{ if and ( ne $element.project_url "" ) ( ne $element.project_url "#" ) }}
-            <div class="hover-overlay">
-              <div class="hover-content">
-                <p class="text-white"> {{ $element.title  }} </p>
-                <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#centralModalLGInfoDemo{{$index}}"> view project </button>  
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
+<!-- portfolio -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">
+          {{ .Site.Data.homepage.portfolio.title | markdownify }}
+        </h2>
       </div>
     </div>
-  </section>
-  <!-- /portfolio -->
-
- 
-
-  {{ if .Site.Data.homepage.testimonial.enable }}
-  {{ with .Site.Data.homepage.testimonial }}
-  <!-- testimonial -->
-  <section class="section bg-primary position-relative testimonial-bg-shapes">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
-        </div>
-        <div class="col-lg-10 mx-auto testimonial-slider">
-          {{ range .item }}
-          <!-- slider-item -->
-          <div class="text-center testimonial-content">
-            <p class="text-white mb-5">{{.content | markdownify}}</p>
-            {{ range .image }}
-            <img class="img-fluid mb-4 d-inline-block img-frame shadow-sm rounded" width="440" height="220" src="{{ . | absURL }}" alt="client-image">
-            {{ end }}
+    <div class="row shuffle-wrapper">
+      {{ $item:= .Site.Data.homepage.portfolio.item_show }}
+      {{ range $index,$element := first $item .Site.Data.portfolio.item }}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block" />
+          {{ if and ( ne $element.project_url "" ) ( ne $element.project_url "#") }}
+          <div class="hover-overlay">
+            <div class="hover-content portfolio-hover">
+              <a href="{{$element.project_url}}" class=" text-white portfolio-hover-title">{{ $element.title }}</a>
+            </div>
           </div>
           {{ end }}
         </div>
       </div>
+      {{ end }}
     </div>
-    <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-  </section>
-  <!-- /testimonial -->
-  {{ end }}
-  {{ end }}
+  </div>
+</section>
+<!-- /portfolio -->
 
-
-  {{ if .Site.Data.homepage.clients_logo_slider.enable }}
-  <!-- client logo slider -->
-  <section class="section pb-0">
-    <div class="container">
-      {{ partial "client-slider.html" . }}
-    </div>
-  </section>
-  <!-- /client logo slider -->
-  {{ end }}
-
-  {{ if .Site.Data.homepage.blog.enable }}
-  <!-- blog -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
+{{ if .Site.Data.homepage.testimonial.enable }}
+{{ with .Site.Data.homepage.testimonial }}
+<!-- testimonial -->
+<section class="section bg-primary position-relative testimonial-bg-shapes">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title text-white mb-5">
+          {{ .title | markdownify }}
+        </h2>
+      </div>
+      <div class="col-lg-10 mx-auto testimonial-slider">
+        {{ range .item }}
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <p class="text-white mb-5">{{.content | markdownify}}</p>
+          {{ range .image }}
+          <img class="img-fluid mb-4 d-inline-block img-frame shadow-sm rounded" width="440" height="220"
+            src="{{ . | absURL }}" alt="client-image" />
+          {{ end }}
         </div>
-        {{ range first 3 .Site.RegularPages }}
-        {{ .Render "post" }}
         {{ end }}
       </div>
     </div>
-  </section>
-  <!-- /blog -->
-  {{ end }}
-
-
-{{ end }}
+  </div>
+  <!-- bg shapes -->
+  <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map" />
+</section>
+<!-- /testimonial -->
+{{ end }} {{ end }} {{ if .Site.Data.homepage.clients_logo_slider.enable }}
+<!-- client logo slider -->
+<section class="section pb-0">
+  <div class="container">
+    {{ partial "client-slider.html" . }}
+  </div>
+</section>
+<!-- /client logo slider -->
+{{ end }} {{ if .Site.Data.homepage.blog.enable }}
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">
+          {{.Site.Data.homepage.blog.title | markdownify }}
+        </h2>
+      </div>
+      {{ range first 3 .Site.RegularPages }} {{ .Render "post" }} {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /blog -->
+{{ end }} {{ end }}

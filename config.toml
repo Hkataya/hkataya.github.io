@@ -44,7 +44,7 @@ weight = 4
 # default parameters
 [params]
 home = "Home"
-logo = "images/logo.png"
+logo = "/images/logo.png"
 # theme color
 theme_color = "#348AC7"
 # contact info
@@ -86,3 +86,15 @@ icon = "ti-dribbble"
 [[params.social]]
 URL = "#"
 icon = "ti-twitter-alt"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4

@@ -2,23 +2,26 @@
 item:
   - image : "images/portfolio/api.png"
     image_modal: ""
-    project_url : "http://examplesite.com"
-    category: "design"
-    title: "Backend API"
-    description: "Developed a backend API service for jobs in MENA region. Responsibilities included"
+    project_url : "https://github.com/Devalopers/Devalopers"
+    category: "web"
+    title: "Devalopers API"
+    description: "Developed the backend API for Devalopers online platform. Responsibilities included:
+     -- 
+
+     "
 
   - image : "images/portfolio/noter.png"
     image_modal : "images/portfolio/noter.png"
     project_url : "https://noterapp.com"
-    category: "illustration"
-    title: "Desktop Application"
+    category: "Desktop"
+    title: "Noter"
     description: "A video playing and Note taking application to developed to aid students taking video based courses."
 
 
   - image : "images/portfolio/t.png"
     image_modal : "images/portfolio/t.png"
     project_url : "https://github.com/Sami-Sh99/Laravel-Scrum-Crowdsourcing"
-    title: "Web Application"
+    title: " 25/10 Crowd Sourcing"
     category: "web"
     description: "25/10 Crowd Sourcing’ is a structure that allows you to rapidly generate and sift through a group’s boldest actionable ideas in less than 30 minutes. This web app replicates this with PHP and Laravel framework"
   
@@ -27,17 +30,10 @@ item:
     image_modal : "images/portfolio/Notewall.jpg"
     project_url : "https://hkataya.github.io/NoteWall/"
     category: "web"
-    title: "Web Application"
+    title: "NoteWall"
     description: "Notewall is a note taking web application that allows users to create, update and delete notes and saves them using local storage API. "
       
     
-  - image : "images/portfolio/1_xdo0UBpyszvD7-7EH4TkIA.png"
-    image_modal : "images/portfolio/1_xdo0UBpyszvD7-7EH4TkIA.png"
-    project_url : "https://github.com/Hkataya/DevBlog"
-    title: "Web Application and Server"
-    category: "web"
-    description: "Test Description"
-      
 
 
 # client logo slider

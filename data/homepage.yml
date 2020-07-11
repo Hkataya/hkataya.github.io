@@ -1,159 +1,132 @@
 # banner
 banner:
-  title : "Hi! <br> I’m  Hasan <br> Software Developer"
+  title: "Hi! <br> I’m  Hasan <br> Software Developer"
 
 # about
 about:
-  enable : true
-  content : 
-    - My name is Hasan Kataya. I’m a 20 year old software developer based in Beirut, Lebanon. I am fast paced and a quick learner with a huge passion for software development.
-    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in JavaScript and Node.js among other technologies to provide the best value to meet your needs.
-  image : "images/about/author.jpg"
+  enable: true
+  content:
+    - Hi, I'm a Software Developer based in Beirut, Lebanon. I have experience in designing, developing, and testing software solutions using the latest and most appropriate technologies and tools. Academically, I obtained a BS in Computer Science from the Lebanese University.
+    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in multiple programming languages and frameworks, knowledge in various testing techniques and software design priciples, and experience with working in an agile way, to provide the best value for your company.
+  image: "images/about/author.jpg"
   button:
-    enable : true
-    label : "Download CV"
+    enable: true
+    label: "Download CV"
 
 # skill
 skill:
-  enable : true
-  title : "Skills"
+  enable: true
+  title: "Skills"
   item:
-    - title : "Development Skills"
-      icon : "ti-stack-overflow"
-      content :
-          - JavaScript
-          - PHP/Laravel       
-          - Node.js 
-          - React.js 
-          - Databases 
-          - Java/JavaFx
-          - Testing (JUnit, Jest)
-        
+    - title: "Development Skills"
+      icon: "ti-stack-overflow"
+      content:
+        - JavaScript
+        - Typescript
+        - Laravel
+        - Node.js
+        - React.js
+        - Java
+        - Databases ( MongoDB, MySQL)
+        - Testing ( Unit, Integration, e2e )
 
-      image : '../images/backgrounds/1.jpg'
+      image: "../images/backgrounds/1.jpg"
 
-    - title : "Software Architecture"
-      icon : "ti-palette"
-      content :
-          - Model-View-Controller
-          -  Component-Based
-          -  Backend API
-          -  Object Oriented Design
-      image : '../images/backgrounds/2.jpg'
-          
-          
+    - title: "Software Architecture"
+      icon: "ti-package"
+      content:
+        - Model-View-Controller
+        - SOLID principles
+        - Rest API Design
+        - Object Oriented Design
+        - Component-Based
 
+      image: "../images/backgrounds/2.jpg"
 
-    - title : "Software Methodology & Tools"
-      icon : "ti-palette"
-      content :
-          - Agile
-          - SCRUM      
-          - Jira
-          - Trello
-          - Waterfall
-          - Sprints
-          - Whatever
-          - one more
-      image : '../images/backgrounds/3.jpg'
+    - title: "Software Methodology & Tools"
+      icon: "ti-trello"
+      content:
+        - SDLC
+        - Agile
+        - SCRUM
+        - Test Driven Developement
+        - Version Control (git)
+        - CI/CD
+        - Jira
 
+      image: "../images/backgrounds/3.jpg"
 
 # experience
 experience:
-  enable : true
-  title : "Experience"
-  item: 
-    - logo : "images/experience/icon-1.png"
-      title : "Backend Web Developer"
-      company : "LIBRO"
-      duration : "July 2019 - Sept 2019"
+  enable: true
+  title: "Experience"
+  item:
+    - logo: "images/experience/icon-1.png"
+      title: "Backend Developer"
+      company: "LIBRO"
+      duration: "July 2019 - Sept 2019"
       color: "pink"
-      content: 
-        - Designed,built, and tested the API backend for a platform that can easily be scaled.
-        - Created test suites in order to assess performance and  functionality.   
+      content:
+        - Designed, built, and tested the API backend for a platform that can easily be scaled.
+        - Used testing strategies (unit, integration) to assess performance and functionality.
         - Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team.
-     
 
-    - logo : "images/experience/icon-2.png"
-      title : "PHP / Laravel Developer"
-      company : "FREELANCE"
-      duration : "Dec 2019 - Feb 2020"
+    - logo: "images/experience/icon-2.png"
+      title: "Laravel Developer"
+      company: "FREELANCE"
+      duration: "Dec 2019 - Feb 2020"
       color: "orange"
-      content: 
-        - Designed,built, and tested the API backend for a platform that can easily be scaled.
-        - Created test suites in order to assess performance and  functionality.   
-        - Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team.
-     
+      content:
+        - Built a web application to automate the 25/10 CrowdSourcing proces.
+        - Developed using PHP/Laravel adhering to the MVC architecture.
+        - Incorporated a real-time layer using Pusher to add real-time data and functionality to the application.
 
-    
 # education
 education:
-  enable : true
-  title : "Education"
+  enable: true
+  title: "Education"
   item:
+    - title: "BS Computer Science"
+      year: "2020"
+      academy: "Lebanese University"
 
-    - title : "BS Computer Science"
-      year : "2020"
-      academy : "Lebanese University"
-      
-    - title : "High School Certificate"
-      year : "2017"
-      academy : "Beirut Modern School"
-
-# service
-service:
-  enable : false
-  title : "Services"
-  item:
-    - title : "UI Design"
-      icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : false
-
-    - title : "UX Design"
-      icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : true
-
-    - title : "Interaction Design"
-      icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : false
+    - title: "High School Certificate"
+      year: "2017"
+      academy: "Beirut Modern School"
 
 # portfolio
 portfolio:
-  enable : true
-  title : "Portfolio"
-  item_show : 5
+  enable: true
+  title: "Portfolio"
+  item_show: 5
   # portfolio item comes from 'data/portfolio.yml' item.
 
 # testimonial
 testimonial:
-  enable : true
-  title : "Achievements"
+  enable: true
+  title: "Achievements"
   item:
-    - name : "Hasan Kataya"
-      image :
+    - name: "Hasan Kataya"
+      image:
         - images/testimonial/FB_IMG_1586028993511.jpg
-        - images/testimonial/IMG-20200411-WA0064.jpg
-  
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
-    - name : "Hasan Kataya"
-      image :
+        - images/testimonial/manar.jpg
+
+      content: "In response to the COVID 19 pandemic and the rocky transition of universities to online learning, I helped develop a Cross-platform desktop application that aids students with thier online learning journey. The application caught the attention of the President of LU who encouraged the initiative, and was picked up by multiple local media publishers across the country. "
+
+    - name: "Hasan Kataya"
+      image:
         - images/testimonial/84050717_10163373146695647_8912667385333284864_n.jpg
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      content: "On February 1 2020, I was hosted by Facebook deveopler circles beirut, to talk about my experience in developing production ready software solutions. I touched on many subjects including, but not limited to: Code Testability, Agile principles, and Software Architecture."
 
 # client logo slider
 clients_logo_slider:
-  enable : false
+  enable: false
   item:
-    - logo : ""
-      URL : ""
-      
+    - logo: ""
+      URL: ""
 
 # blog
 blog:
-  enable : true
-  title : "Blogs"
+  enable: true
+  title: "Blogs"
   # blog post comes from "content/blog" folder
