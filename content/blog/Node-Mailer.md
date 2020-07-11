@@ -13,15 +13,19 @@ First we should install the package into our system:
 
 {{< highlight  "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
 npm install nodemailer --save
+
 {{< / highlight >}}
 
 Once installed, create a new Script file called email.js. We should first require the package we installed using:
 
-{{< highlight javascript "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
+{{< highlight "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
 const nodemailer = require('nodemailer');
+
 {{< / highlight >}}
 
-Next we should configure the sender options. To do so, we place all settings into an object like so:
+
+
+Next we should configure the sender options. To do so, we place all settings into an object:
 
 {{< highlight javascript "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
 var transporter = nodemailer.createTransport({
