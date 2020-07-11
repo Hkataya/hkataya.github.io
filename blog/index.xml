@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Hasan kataya | Portfolio</title>
+    <link>https://hkataya.github.io/blog/</link>
+    <description>Recent content in Blog on Hasan kataya | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    
+	<atom:link href="https://hkataya.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automation With JavaScript: Email Scheduler</title>
+      <link>https://hkataya.github.io/blog/node-mailer/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      
+      <guid>https://hkataya.github.io/blog/node-mailer/</guid>
+      <description>JavaScript was never intended to be used for desktop scripting, but upon the arrival of Node js, plently of libraries and packages were created to give javaScript the power to work beyond the browser.</description>
+    </item>
+    
+  </channel>
+</rss>
