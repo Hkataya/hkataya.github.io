@@ -34,7 +34,7 @@
         <div class="mb-2">
           <img src="{{.image | absURL }}" alt="author" class="img-fluid w-75 rounded-lg border-thick border-white" />
         </div>
-        <button class="btn btn-primary btn-xs mb-4">{{ .button.label }}</button>
+        <a href="/Resume.pdf" class="btn btn-primary btn-xs mb-4" download>{{ .button.label }}</a>
       </div>
       <div class="col-md-8">
         {{ range .content }}

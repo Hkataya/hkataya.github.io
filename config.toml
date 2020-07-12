@@ -48,8 +48,8 @@ logo = "/images/logo.svg"
 # theme color
 theme_color = "#348AC7"
 # contact info
-phone = "+880 2544 658 256"
-email = "steve.fruits@email.com"
+phone = "+96170046273"
+email = "hasankataya10@gmail.com"
 address = "Beirut, Lebanon"
 # meta description
 author = "Hasan Kataya"
@@ -72,20 +72,17 @@ preloader = "" # use png, jpg, svg or gif format
 
 # social site
 [[params.social]]
-URL = "#"
+URL = "https://github.com/Hkataya"
+icon = "ti-github"
+
+[[params.social]]
+URL = "https://www.linkedin.com/in/hasan-kataya-130543150/"
+icon = "ti-linkedin"
+
+[[params.social]]
+URL = "https://www.facebook.com/profile.php?id=100007251845309"
 icon = "ti-facebook"
 
-[[params.social]]
-URL = "#"
-icon = "ti-instagram"
-
-[[params.social]]
-URL = "#"
-icon = "ti-dribbble"
-
-[[params.social]]
-URL = "#"
-icon = "ti-twitter-alt"
 
 [markup]
   [markup.highlight]
