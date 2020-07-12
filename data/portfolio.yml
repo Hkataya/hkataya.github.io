@@ -26,12 +26,12 @@ item:
     description: "25/10 Crowd Sourcing’ is a structure that allows you to rapidly generate and sift through a group’s boldest actionable ideas in less than 30 minutes. This web app replicates this with PHP and Laravel framework"
   
       
-  - image : "images/portfolio/Notewall.jpg"
-    image_modal : "images/portfolio/Notewall.jpg"
-    project_url : "https://hkataya.github.io/NoteWall/"
+  - image : "images/portfolio/jbpm.jpg"
+    image_modal : "images/portfolio/jbpm.jpg"
+    project_url : "https://github.com/Hkataya/JBPM-Task-Workflow/tree/master/first-task"
     category: "web"
-    title: "NoteWall"
-    description: "Notewall is a note taking web application that allows users to create, update and delete notes and saves them using local storage API. "
+    title: "JBPM Task Workflow"
+    description: "JBPM"
       
     
 

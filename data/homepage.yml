@@ -7,7 +7,7 @@ about:
   enable: true
   content:
     - Hi, I'm a Software Developer based in Beirut, Lebanon. I have experience in designing, developing, and testing software solutions using the latest and most appropriate technologies and tools. Academically, I obtained a BS in Computer Science from the Lebanese University.
-    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in multiple programming languages and frameworks, knowledge in various testing techniques and software design priciples, and experience with working in an agile way, to provide the best value for your company.
+    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in multiple programming languages and frameworks, knowledge in various testing techniques and software design principles, and experience with working in an agile way, to provide the best value for your company.
   image: "images/about/author.jpg"
   button:
     enable: true
@@ -21,12 +21,12 @@ skill:
     - title: "Development Skills"
       icon: "ti-stack-overflow"
       content:
-        - JavaScript
         - Typescript
         - Laravel
         - Node.js
         - React.js
         - Java
+        - Spring Boot
         - Databases ( MongoDB, MySQL)
         - Testing ( Unit, Integration, e2e )
 
@@ -62,12 +62,12 @@ experience:
   title: "Experience"
   item:
     - logo: "images/experience/icon-1.png"
-      title: "Backend Developer"
+      title: "Software Developer"
       company: "LIBRO"
-      duration: "July 2019 - Sept 2019"
+      duration: "June 2019 - Oct 2019"
       color: "pink"
       content:
-        - Designed, built, and tested the API backend for a platform that can easily be scaled.
+        - Designed, built, and tested the API backend for a platform that can easily be scaled (NodeJS).
         - Used testing strategies (unit, integration) to assess performance and functionality.
         - Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team.
 
