@@ -5,9 +5,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary">
+        <h2 class="text-white font-tertiary">
           {{ .Site.Data.homepage.banner.title | safeHTML }}
-        </h1>
+        </h2>
       </div>
     </div>
   </div>
@@ -29,16 +29,17 @@
 <section class="section pt-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        {{ range .content }}
-        <p>{{ . }}</p>
-        {{ end }}
-      </div>
+
       <div class="col-md-4 text-center drag-lg-top">
         <div class="mb-2">
           <img src="{{.image | absURL }}" alt="author" class="img-fluid w-75 rounded-lg border-thick border-white" />
         </div>
-        <button class="btn btn-sm btn-primary">{{ .button.label }}</button>
+        <button class="btn btn-primary btn-xs mb-4">{{ .button.label }}</button>
+      </div>
+      <div class="col-md-8">
+        {{ range .content }}
+        <p>{{ . }}</p>
+        {{ end }}
       </div>
     </div>
   </div>

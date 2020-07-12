@@ -104,7 +104,7 @@ portfolio:
 # testimonial
 testimonial:
   enable: true
-  title: "Achievements"
+  title: "Events"
   item:
     - name: "Hasan Kataya"
       image:
