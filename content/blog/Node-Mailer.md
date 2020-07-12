@@ -1,11 +1,11 @@
 ---
 title: "Automation With JavaScript: Email Scheduler"
-date: 2019-05-12T12:14:34+06:00
-image: "images/blog/node-mailer.png"
-description: "This is meta description."
+date: 2020-07-12T12:14:34+06:00
+image: "images/blog/node-mailer.jpg"
+description: "Automaion with javascript is a series of tutorials showing how easy it is to automate daily tasks using javaScript and Node.js."
 ---
 
-JavaScript was never intended to be used for desktop scripting, but upon the arrival of Node js, plently of libraries and packages were created to give javaScript the power to work beyond the browser. One such package is called Node mailer.
+JavaScript was never intended to be used for desktop scripting. But upon the arrival of Node js, plently of libraries <!--more--> were created to allow javaScript to work outside the browser. One such package is called Node mailer.
 
 Node mailer is a module for Node js to send emails. Lets try sending an email with javaScript!
 
