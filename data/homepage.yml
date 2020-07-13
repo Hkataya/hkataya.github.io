@@ -7,7 +7,7 @@ about:
   enable: true
   content:
     - Hi, I'm a Software Developer based in Beirut, Lebanon. I have experience in designing, developing, and testing software solutions using the latest and most appropriate technologies and tools. Academically, I obtained a BS in Computer Science from the Lebanese University.
-    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in multiple programming languages and frameworks, knowledge in various testing techniques and software design principles, and experience with working in an agile way, to provide the best value for your company.
+    - Quality is the main principle of my work. I always strive to build software that is elegant, functional, and performant. I aim to leverage my proficiency in multiple languages and frameworks, knowledge in various testing techniques and software design principles, and experience with working in an agile way, to provide the best value for your company.
   image: "images/about/author.jpg"
   button:
     enable: true
@@ -18,7 +18,7 @@ skill:
   enable: true
   title: "Skills"
   item:
-    - title: "Development Skills"
+    - title: "Development Tools"
       icon: "ti-stack-overflow"
       content:
         - Typescript
@@ -49,7 +49,7 @@ skill:
         - SDLC
         - Agile
         - SCRUM
-        - Test Driven Developement
+        - Test Driven Development
         - Version Control (git)
         - CI/CD
         - Jira
