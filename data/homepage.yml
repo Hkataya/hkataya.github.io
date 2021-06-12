@@ -27,18 +27,17 @@ skill:
         - React.js
         - Java
         - Spring Boot
-        - Databases ( MongoDB, MySQL)
-        - Testing ( Unit, Integration, e2e )
+        - CSS (Bootstrap, Tailwind) 
 
       image: "../images/backgrounds/1.jpg"
 
     - title: "Software Architecture"
       icon: "ti-package"
       content:
-        - Model-View-Controller
+        - Object Oriented Design
         - SOLID principles
         - Rest API Design
-        - Object Oriented Design
+        - Microservices
         - Component-Based
 
       image: "../images/backgrounds/2.jpg"
@@ -51,9 +50,7 @@ skill:
         - SCRUM
         - Test Driven Development
         - Version Control (git)
-        - CI/CD
         - Jira
-
       image: "../images/backgrounds/3.jpg"
 
 # experience
@@ -61,25 +58,40 @@ experience:
   enable: true
   title: "Experience"
   item:
-    - logo: "images/experience/icon-1.png"
+    - logo: "images/experience/cma-cgm.png"
+      title: "Full Stack Software Engineer"
+      company: "CMA CGM"
+      duration: "NOV 2020 - PRESENT"
+      color: "red"
+      content:
+        - Initiating and leading the development (React.js) of an internal UI library based on the company's design guidelines for usage across multiple projects
+        - Building internal dashboards (React.js) consisting of various charts, graphs, and data tables for data management and visualization
+        - Working within the API team to build back-end APIs in a microservice architecture, with responsibilities  including the design and documentation (Swagger), development (Spring boot), testing (Jmeter, Cucumber), and deployment (XLRelease, XLDeploy)
+        - Integrating a UI testing strategy consisting of end-to-end (Cypress) and component (react-testing-library) testing tools into CI/CD pipelines of front-end projects
+   
+    - logo: "images/experience/webneoo.png"
+      title: "Full Stack Developer"
+      company: "WEBNEOO"
+      duration: "AUG 2020 - NOV 2020"
+      color: "skyblue"
+      content:
+        - Developed and maintained an in-house API based ecommerce platform built using PHP Laravel framework
+        - Built sleek and responsive UIs using Bootstrap CSS and followed design and accessibility guidelines
+        - Worked on and maintained various ecommerce, marketing, and portfolio websites
+        - Communicated with clients and integrated a tight feedback loop into the product development process
+        -  Worked in an agile environment with weekly sprints and daily meetings for continuous progress updates
+
+    - logo: "images/experience/libro.png"
       title: "Software Developer"
       company: "LIBRO"
       duration: "June 2019 - Oct 2019"
-      color: "pink"
+      color: "darkblue"
       content:
-        - Designed, built, and tested the API backend for a platform that can easily be scaled (NodeJS).
-        - Used testing strategies (unit, integration) to assess performance and functionality.
-        - Worked in an agile way and used Scrum framework and Jira to collaborate on the project with the team.
+        - Designed and developed the API backend (Node.js) for a jobs platform adhering to API design best practices
+        - Built a web interface for the platform using React.js and Redux
+        - Used various testing strategies (unit, integration, e2e) and static code analyzers to assess code quality
+        - Worked in an agile way and using Scrum framework and Jira to collaborate with the team
 
-    - logo: "images/experience/icon-2.png"
-      title: "Laravel Developer"
-      company: "FREELANCE"
-      duration: "Dec 2019 - Feb 2020"
-      color: "orange"
-      content:
-        - Built a web application to automate the 25/10 CrowdSourcing proces.
-        - Developed using PHP/Laravel adhering to the MVC architecture.
-        - Incorporated a real-time layer using Pusher to add real-time data and functionality to the application.
 
 # education
 education:
@@ -109,8 +121,7 @@ testimonial:
     - name: "Hasan Kataya"
       image:
         - images/testimonial/FB_IMG_1586028993511.jpg
-        - images/testimonial/manar.jpg
-
+  
       content: "In response to the COVID 19 pandemic and the rocky transition of universities to online learning, I helped develop a Cross-platform desktop application that aids students with their online learning journey. The application caught the attention of the President of LU who encouraged the initiative, and was picked up by multiple local media publishers across the country. "
 
     - name: "Hasan Kataya"

@@ -12,7 +12,7 @@ item:
 
   - image : "images/portfolio/noter.png"
     image_modal : "images/portfolio/noter.png"
-    project_url : "https://noterapp.com"
+    project_url : "https://github.com/Hkataya/Noter"
     category: "Desktop"
     title: "Noter"
     description: "A video playing and Note taking application to developed to aid students taking video based courses."
